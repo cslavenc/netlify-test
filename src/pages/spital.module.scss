@@ -1,0 +1,7 @@
+@import '../styles/utilities';
+
+h1, h2  {
+  &.spital-heading {
+    color: $red;
+  }
+}

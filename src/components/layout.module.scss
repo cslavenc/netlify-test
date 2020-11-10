@@ -1,0 +1,62 @@
+@import '../styles/utilities';
+
+// content is centered in the middle
+.layout-center {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  background-color: white !important;
+}
+
+.layout-base {
+  * {
+    box-sizing: border-box;
+  }
+
+  /* More info: https://bit.ly/2PsCnzk */
+  * + * {
+    margin-top: 1rem;
+  }
+}
+
+// default styling
+html,
+body,
+blockquote {
+  margin: 0;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: Arial, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  sans-serif, 'Apple Color Emoji', Helvetica, Georgia,
+  'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 14px;
+  line-height: 1.4;
+  background-color: $grey;
+
+  @media (min-width: calc(550px + 10vw)) {
+    font-size: 18px;
+  }
+
+  /* remove margin for the main div that Gatsby mounts into */
+  > div {
+    margin-top: 0;
+  }
+}
+
+main {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.layout-base h1, h2 {
+  color: $brown;
+}
+
+.layout-base h3, h4 {
+  color: $bright-orange;
+}
+

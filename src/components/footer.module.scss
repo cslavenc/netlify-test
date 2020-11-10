@@ -1,0 +1,29 @@
+@import 'src/styles/utilities.scss';
+
+// add some margins here at the end for fine tuning
+.footer {
+}
+
+.has-background {
+  background-color: indianred;
+}
+.columns {
+  display: flex !important;
+}
+
+.column {
+  flex: 50% !important;
+}
+
+.contact-details {
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 1.25rem 0;
+  position: relative;
+  text-align: center;
+  font-size: x-large;
+}
+
+.not-first-child {
+  margin-top: 1.7rem !important;  // override owl selector value
+}

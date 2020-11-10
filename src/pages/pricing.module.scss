@@ -1,0 +1,15 @@
+/*
+@import 'src/styles/utilities';
+
+.divider {
+  text-decoration-line: overline;
+}
+*/
+
+.columns {
+  display: flex !important;
+}
+
+.column {
+  flex: 50% !important;
+}
